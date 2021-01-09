@@ -8,3 +8,7 @@ const map = function(array, callback){
   return results
 }
 const results1 = map(words, word => word*2);
+
+
+module.exports = map;
+
