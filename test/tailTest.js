@@ -1,4 +1,12 @@
+const assert = require('../node_modules/chai').assert;
 const tail = require('../tail');
-const assertArrayEqual = require("../assertArrayEqual"); 
-assertArrayEqual(tail([0, 5]), [5]);
-assertArrayEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+
+describe('#tail', () => {
+  it('Should return 5 when given [0,5]', () => {
+    assert.deepEqual(tail([0,5]), [5]);
+  }) 
+  it('Should return ["Lighthouse", "labs"]', () => {
+    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"])
+  })
+
+})
