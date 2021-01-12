@@ -12,6 +12,6 @@ const letterPositions = function(sentence) {
       counter[newString[i]].push(i)
     }
     return counter; 
-  }
+  };
 
   module.exports = letterPositions; 

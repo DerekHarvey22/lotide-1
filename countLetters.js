@@ -1,4 +1,4 @@
-const assertEqual = require("./assertEqual");
+// const assertEqual = require("./assertEqual");
 
 const countLetters = function(string) {
   let newString = string.toLowerCase().split(' ').join('')
@@ -9,7 +9,7 @@ const countLetters = function(string) {
   return counter; 
 }
 
-console.log(countLetters('This is it'))
+
 
 
 module.export = countLetters; 
